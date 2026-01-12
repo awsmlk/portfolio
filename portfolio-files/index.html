@@ -166,13 +166,19 @@
     }
 
     article {
-      display: none;
-    }
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+}
 
-    article.active {
-      display: block;
-      animation: fade 0.5s ease backwards;
-    }
+article.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
 
     @keyframes fade {
       0% {
@@ -387,6 +393,13 @@
       z-index: 5;
     }
 
+    .navbar {
+  will-change: transform;
+}
+
+body {
+  overflow-x: hidden;
+}
     .navbar-list {
       display: flex;
       flex-wrap: wrap;
@@ -1174,7 +1187,10 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
-
+    
+html {
+  scrollbar-gutter: stable;
+}
     @media (min-width: 1250px) {
       body::-webkit-scrollbar {
         width: 20px;
@@ -1564,6 +1580,9 @@ article.active {
   }
 }
 
+.main-content {
+  min-height: 80vh;
+}
 
 .reveal {
   opacity: 0;
