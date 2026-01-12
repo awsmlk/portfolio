@@ -9,7 +9,7 @@ Built with **HTML, CSS, and JavaScript**, and deployed using **GitHub Pages**.
 ## 🚀 Live Demo
 
 👉 **View Portfolio:**  
-https://awsmlk.github.io/
+https://awsmlk.github.io/portfolio/
 
 ---
 
