@@ -166,19 +166,19 @@
     }
 
     article {
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(12px);
-}
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px);
+    }
 
-article.active {
-  position: relative;
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
+    article.active {
+      position: relative;
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
 
     @keyframes fade {
       0% {
@@ -394,12 +394,13 @@ article.active {
     }
 
     .navbar {
-  will-change: transform;
-}
+      will-change: transform;
+    }
 
-body {
-  overflow-x: hidden;
-}
+    body {
+      overflow-x: hidden;
+    }
+
     .navbar-list {
       display: flex;
       flex-wrap: wrap;
@@ -1187,10 +1188,11 @@ body {
         grid-template-columns: repeat(3, 1fr);
       }
     }
-    
-html {
-  scrollbar-gutter: stable;
-}
+
+    html {
+      scrollbar-gutter: stable;
+    }
+
     @media (min-width: 1250px) {
       body::-webkit-scrollbar {
         width: 20px;
@@ -1304,299 +1306,345 @@ html {
       }
     }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-    transform: none !important;
-  }
-}
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+      }
+    }
 
-@media (hover: none) {
-  .service-item:hover,
-  .content-card:hover,
-  .project-item > a:hover {
-    transform: none;
-    box-shadow: none;
-  }
-}
+    @media (hover: none) {
 
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+      .service-item:hover,
+      .content-card:hover,
+      .project-item>a:hover {
+        transform: none;
+        box-shadow: none;
+      }
+    }
 
-button,
-a {
-  cursor: pointer;
-}
+    body {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-body.light {
-  --smoky-black: #f4f4f5;
+    button,
+    a {
+      cursor: pointer;
+    }
 
-  --eerie-black-1: #ffffff;
-  --eerie-black-2: #f8f8f8;
+    body.light {
+      --smoky-black: #f4f4f5;
 
-  --jet: #e5e7eb;
+      --eerie-black-1: #ffffff;
+      --eerie-black-2: #f8f8f8;
 
-  --white-1: #111827;
-  --white-2: #111827;
-  --light-gray: #374151;
-  --light-gray-70: #6b7280;
+      --jet: #e5e7eb;
 
-  --shadow-1: 0 4px 12px rgba(0, 0, 0, 0.06);
-  --shadow-2: 0 8px 20px rgba(0, 0, 0, 0.08);
-  --shadow-3: 0 12px 30px rgba(0, 0, 0, 0.1);
+      --white-1: #111827;
+      --white-2: #111827;
+      --light-gray: #374151;
+      --light-gray-70: #6b7280;
 
-  --border-gradient-onyx: none;
-  --bg-gradient-jet: none;
-}
+      --shadow-1: 0 4px 12px rgba(0, 0, 0, 0.06);
+      --shadow-2: 0 8px 20px rgba(0, 0, 0, 0.08);
+      --shadow-3: 0 12px 30px rgba(0, 0, 0, 0.1);
 
-body.light .sidebar,
-body.light article,
-body.light .service-item,
-body.light .content-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-}
+      --border-gradient-onyx: none;
+      --bg-gradient-jet: none;
+    }
 
-body.light .service-item {
-  background: #f9fafb;
-}
+    body.light .sidebar,
+    body.light article,
+    body.light .service-item,
+    body.light .content-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+    }
 
-body.light .service-item::before,
-body.light .content-card::before {
-  display: none;
-}
+    body.light .service-item {
+      background: #f9fafb;
+    }
 
-body.light .navbar {
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid #e5e7eb;
-  backdrop-filter: blur(12px);
-}
-body.light .info-content .title {
-  background: #e5e7eb;
-  color: #111827;
-}
+    body.light .service-item::before,
+    body.light .content-card::before {
+      display: none;
+    }
 
-body.light .icon-box {
-  background: #f3f4f6;
-  box-shadow: none;
-}
+    body.light .navbar {
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid #e5e7eb;
+      backdrop-filter: blur(12px);
+    }
 
-body.light .icon-box::before {
-  display: none;
-}
+    body.light .info-content .title {
+      background: #e5e7eb;
+      color: #111827;
+    }
 
-body.light .timeline-item::after {
-  box-shadow: 0 0 0 4px #e5e7eb;
-}
+    body.light .icon-box {
+      background: #f3f4f6;
+      box-shadow: none;
+    }
 
-body.light .form-input {
-  background: #ffffff;
-  color: #111827;
-}
-body.light * {
-  transition:
-    background-color 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease;
-}
+    body.light .icon-box::before {
+      display: none;
+    }
 
-body.light .service-item,
-body.light .content-card,
-body.light .project-item > a,
-body.light article {
-  transform: translateY(0);
-}
+    body.light .timeline-item::after {
+      box-shadow: 0 0 0 4px #e5e7eb;
+    }
 
-body.light .service-item:hover,
-body.light .content-card:hover,
-body.light .project-item > a:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
-  border-color: #d1d5db;
-}
+    body.light .form-input {
+      background: #ffffff;
+      color: #111827;
+    }
 
-body.light .service-item:hover ion-icon,
-body.light .icon-box ion-icon {
-  color: var(--orange-yellow-crayola);
-}
+    body.light * {
+      transition:
+        background-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+    }
 
-body.light .service-item:hover .icon-box {
-  background: #fff7ed;
-  transform: scale(1.05);
-}
+    body.light .service-item,
+    body.light .content-card,
+    body.light .project-item>a,
+    body.light article {
+      transform: translateY(0);
+    }
 
-body.light .navbar-link {
-  position: relative;
-}
+    body.light .service-item:hover,
+    body.light .content-card:hover,
+    body.light .project-item>a:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+      border-color: #d1d5db;
+    }
 
-body.light .navbar-link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 12px;
-  width: 0;
-  height: 2px;
-  background: var(--orange-yellow-crayola);
-  transition: 0.25s ease;
-  transform: translateX(-50%);
-}
+    body.light .service-item:hover ion-icon,
+    body.light .icon-box ion-icon {
+      color: var(--orange-yellow-crayola);
+    }
 
-body.light .navbar-link:hover::after {
-  width: 60%;
-}
+    body.light .service-item:hover .icon-box {
+      background: #fff7ed;
+      transform: scale(1.05);
+    }
 
-body.light .form-btn {
-  background: #111827;
-  color: #ffffff;
-}
+    body.light .navbar-link {
+      position: relative;
+    }
 
-body.light .form-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+    body.light .navbar-link::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 12px;
+      width: 0;
+      height: 2px;
+      background: var(--orange-yellow-crayola);
+      transition: 0.25s ease;
+      transform: translateX(-50%);
+    }
 
-body.light .project-img::before {
-  background: rgba(0, 0, 0, 0);
-}
+    body.light .navbar-link:hover::after {
+      width: 60%;
+    }
 
-body.light .project-item > a:hover .project-img::before {
-  background: rgba(0, 0, 0, 0.15);
-}
+    body.light .form-btn {
+      background: #111827;
+      color: #ffffff;
+    }
 
-body.light .social-link:hover {
-  transform: translateY(-3px);
-  color: #111827;
-}
+    body.light .form-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
 
-body:not(.light) * {
-  transition:
-    background-color 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.25s ease,
-    color 0.25s ease,
-    border-color 0.25s ease;
-}
+    body.light .project-img::before {
+      background: rgba(0, 0, 0, 0);
+    }
 
-body:not(.light) .service-item,
-body:not(.light) .content-card,
-body:not(.light) .project-item > a,
-body:not(.light) article {
-  transform: translateY(0) scale(1);
-}
+    body.light .project-item>a:hover .project-img::before {
+      background: rgba(0, 0, 0, 0.15);
+    }
 
-body:not(.light) .service-item:hover,
-body:not(.light) .content-card:hover,
-body:not(.light) .project-item > a:hover {
-  transform: translateY(-4px) scale(1.015);
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.6),
-    0 0 0 1px rgba(255, 255, 255, 0.03);
-}
+    body.light .social-link:hover {
+      transform: translateY(-3px);
+      color: #111827;
+    }
 
-body:not(.light) .icon-box {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+    body:not(.light) * {
+      transition:
+        background-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+    }
 
-body:not(.light) .service-item:hover .icon-box {
-  transform: scale(1.1);
-  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.15);
-}
+    body:not(.light) .service-item,
+    body:not(.light) .content-card,
+    body:not(.light) .project-item>a,
+    body:not(.light) article {
+      transform: translateY(0) scale(1);
+    }
 
-body:not(.light) .navbar-link {
-  position: relative;
-}
+    body:not(.light) .service-item:hover,
+    body:not(.light) .content-card:hover,
+    body:not(.light) .project-item>a:hover {
+      transform: translateY(-4px) scale(1.015);
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(255, 255, 255, 0.03);
+    }
 
-body:not(.light) .navbar-link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 12px;
-  width: 0;
-  height: 2px;
-  background: var(--orange-yellow-crayola);
-  transition: 0.3s ease;
-  transform: translateX(-50%);
-  opacity: 0.7;
-}
+    body:not(.light) .icon-box {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
 
-body:not(.light) .navbar-link:hover::after {
-  width: 65%;
-}
+    body:not(.light) .service-item:hover .icon-box {
+      transform: scale(1.1);
+      box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.15);
+    }
 
-body:not(.light) .project-img::before {
-  background: rgba(0, 0, 0, 0);
-}
+    body:not(.light) .navbar-link {
+      position: relative;
+    }
 
-body:not(.light) .project-item > a:hover .project-img::before {
-  background: rgba(0, 0, 0, 0.55);
-}
+    body:not(.light) .navbar-link::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 12px;
+      width: 0;
+      height: 2px;
+      background: var(--orange-yellow-crayola);
+      transition: 0.3s ease;
+      transform: translateX(-50%);
+      opacity: 0.7;
+    }
 
-body:not(.light) .project-item-icon-box {
-  transform: translate(-50%, -50%) scale(0.85);
-}
+    body:not(.light) .navbar-link:hover::after {
+      width: 65%;
+    }
 
-body:not(.light) .project-item > a:hover .project-item-icon-box {
-  transform: translate(-50%, -50%) scale(1);
-  box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
-}
+    body:not(.light) .project-img::before {
+      background: rgba(0, 0, 0, 0);
+    }
 
-body:not(.light) .form-btn:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.8),
-    0 0 0 1px rgba(255, 193, 7, 0.25);
-}
+    body:not(.light) .project-item>a:hover .project-img::before {
+      background: rgba(0, 0, 0, 0.55);
+    }
 
-body:not(.light) .social-link:hover {
-  transform: translateY(-3px) scale(1.05);
-  color: var(--orange-yellow-crayola);
-}
+    body:not(.light) .project-item-icon-box {
+      transform: translate(-50%, -50%) scale(0.85);
+    }
 
-article {
-  opacity: 0;
-  transform: translateY(12px);
-  pointer-events: none;
-}
+    body:not(.light) .project-item>a:hover .project-item-icon-box {
+      transform: translate(-50%, -50%) scale(1);
+      box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.2);
+    }
 
-article.active {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-  animation: pageEnter 0.45s ease forwards;
-}
+    body:not(.light) .form-btn:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.8),
+        0 0 0 1px rgba(255, 193, 7, 0.25);
+    }
 
-@keyframes pageEnter {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    body:not(.light) .social-link:hover {
+      transform: translateY(-3px) scale(1.05);
+      color: var(--orange-yellow-crayola);
+    }
 
-.main-content {
-  min-height: 80vh;
-}
+    article {
+      opacity: 0;
+      transform: translateY(12px);
+      pointer-events: none;
+    }
 
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
-}
+    article.active {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      animation: pageEnter 0.45s ease forwards;
+    }
 
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+    @keyframes pageEnter {
+      from {
+        opacity: 0;
+        transform: translateY(14px);
+      }
 
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .main-content {
+      min-height: 80vh;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    body:not(.light) ion-icon,
+    body:not(.light) .icon-box ion-icon,
+    body:not(.light) svg {
+      color: var(--orange-yellow-crayola);
+      stroke: currentColor;
+      fill: currentColor;
+    }
+
+    body:not(.light) .service-icon-box ion-icon {
+      color: var(--orange-yellow-crayola);
+      opacity: 0.95;
+    }
+
+    body:not(.light) .social-link svg {
+      color: var(--light-gray);
+    }
+
+    body:not(.light) .social-link:hover svg {
+      color: var(--orange-yellow-crayola);
+    }
+
+    body:not(.light) .blog,
+    body:not(.light) .blog * {
+      color: var(--white-2);
+    }
+
+    body:not(.light) .blog p,
+    body:not(.light) .blog span,
+    body:not(.light) .blog time {
+      color: var(--light-gray);
+    }
+
+    body:not(.light) .article-title::after {
+      background: var(--text-gradient-yellow);
+    }
+
+    .blog-placeholder {
+      font-size: 1.1rem;
+      color: var(--light-gray);
+      opacity: 0.8;
+      margin-top: 20px;
+    }
   </style>
 
 </head>
@@ -1797,27 +1845,27 @@ article.active {
 
           <ol class="timeline-list">
             <li class="timeline-item">
-  <h4 class="h4 timeline-item-title">
-    Army Public School (APSACS)
-  </h4>
-  <span>High School – Science (2020 – 2024)</span>
+              <h4 class="h4 timeline-item-title">
+                Army Public School (APSACS)
+              </h4>
+              <span>High School – Science (2020 – 2024)</span>
 
-  <p class="timeline-text">
-    Grade: A
-  </p>
+              <p class="timeline-text">
+                Grade: A
+              </p>
 
-  <ul class="timeline-text">
-    <li>Served as Class Representative (CR) & Peace Keeper</li>
-    <li>Member of the Debate Club & Young Journalists Club</li>
-    <li>Participant in IKMC & Makerspace Skills Programme</li>
-    <li>Participated in Sports Galas (Badminton & Chess)</li>
-    <li>Contributed to tree plantation drives & clean water projects</li>
-  </ul>
-</li>
+              <ul class="timeline-text">
+                <li>Served as Class Representative (CR) & Peace Keeper</li>
+                <li>Member of the Debate Club & Young Journalists Club</li>
+                <li>Participant in IKMC & Makerspace Skills Programme</li>
+                <li>Participated in Sports Galas (Badminton & Chess)</li>
+                <li>Contributed to tree plantation drives & clean water projects</li>
+              </ul>
+            </li>
 
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">STEM & Robotics Workshops</h4>
-              <span>LearnOBots – STEM Camp (2019 – 2021)</span>
+              <span>LearnOBots – STEM Camp (2017 – 2019)</span>
               <p class="timeline-text">
                 Completed multiple workshops focused on STEM and Robotics, gaining hands-on experience
                 in building and programming robots.
@@ -1981,13 +2029,14 @@ article.active {
         </section>
       </article>
 
+
       <article class="blog" data-page="blog">
         <header>
           <h2 class="h2 article-title">Blog</h2>
         </header>
-
+        <p class="blog-placeholder">Coming soon…</p>
         <section class="blog-list">
-          <p>Coming soon...</p>
+          <!-- Blog posts will go here in the future -->
         </section>
       </article>
 
@@ -2028,24 +2077,24 @@ article.active {
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script>
-  const toggleBtn = document.getElementById("themeToggle");
-  const body = document.body;
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    const body = document.body;
 
-  toggleBtn.addEventListener("click", () => {
-    body.classList.toggle("light");
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("light");
 
-    if (body.classList.contains("light")) {
-      toggleBtn.innerText = "🌙 Dark";
-      toggleBtn.style.background = "#111";
-      toggleBtn.style.color = "#fff";;
-    } else {
-      toggleBtn.innerText = "☀️ Light";
-      toggleBtn.style.background = "#f5f5f5";
-      toggleBtn.style.color = "#111";
-    }
-  });
-</script>
+      if (body.classList.contains("light")) {
+        toggleBtn.innerText = "🌙 Dark";
+        toggleBtn.style.background = "#111";
+        toggleBtn.style.color = "#fff";;
+      } else {
+        toggleBtn.innerText = "☀️ Light";
+        toggleBtn.style.background = "#f5f5f5";
+        toggleBtn.style.color = "#111";
+      }
+    });
+  </script>
 
   <script>
     const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
@@ -2131,26 +2180,26 @@ article.active {
   </script>
 
   <script>
-  const revealElements = document.querySelectorAll(
-    ".service-item, .timeline-item, .skills-item, .project-item, .blog-post-item"
-  );
+    const revealElements = document.querySelectorAll(
+      ".service-item, .timeline-item, .skills-item, .project-item, .blog-post-item"
+    );
 
-  revealElements.forEach(el => el.classList.add("reveal"));
+    revealElements.forEach(el => el.classList.add("reveal"));
 
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.15 }
-  );
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
 
-  revealElements.forEach(el => observer.observe(el));
-</script>
+    revealElements.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 
