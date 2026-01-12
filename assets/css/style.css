@@ -1322,7 +1322,6 @@ body.light .icon-box svg {
   color: #000 !important;
   fill: #000 !important;
 }
-
 body.light .icon-box::before {
   background: #f2f2f2 !important;
 }
