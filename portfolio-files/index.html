@@ -24,7 +24,7 @@
       --light-gray: #333;
       --light-gray-70: #555;
     }
- 
+
     :root {
       --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
       --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
@@ -1288,6 +1288,32 @@
       }
     }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+@media (hover: none) {
+  .service-item:hover,
+  .content-card:hover,
+  .project-item > a:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
 body.light {
   --smoky-black: #f4f4f5;
 
@@ -1513,7 +1539,47 @@ body:not(.light) .social-link:hover {
   transform: translateY(-3px) scale(1.05);
   color: var(--orange-yellow-crayola);
 }
+
+article {
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+}
+
+article.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  animation: pageEnter 0.45s ease forwards;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   </style>
+
 </head>
 
 <body class="light">
@@ -2044,6 +2110,29 @@ body:not(.light) .social-link:hover {
       });
     }
   </script>
+
+  <script>
+  const revealElements = document.querySelectorAll(
+    ".service-item, .timeline-item, .skills-item, .project-item, .blog-post-item"
+  );
+
+  revealElements.forEach(el => el.classList.add("reveal"));
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealElements.forEach(el => observer.observe(el));
+</script>
+
 </body>
 
 </html>
