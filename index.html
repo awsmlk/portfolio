@@ -40,7 +40,7 @@
 
         <div class="info-content">
           <h1 class="name" title="Awais">Awais</h1>
-          <p class="title">Developer</p>
+          <p class="title">Software Developer • AI & Robotics Enthusiast</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -134,14 +134,12 @@
         </header>
 
         <section class="about-text">
-          <p>
-            Hey, I'm Awais 👋 I enjoy building apps and web projects. I like collaborating on open-source,
-            web apps, or anything creative and I notice the small details most people skip.
-          </p>
-          <p>
-            I ship thoughtfully designed apps and web projects. I enjoy frontend work, APIs, and polishing UX
-            until it feels effortless.
-          </p>
+<p>
+  Hi, I'm Awais Malik, a computer science student and a developer with a passion for software engineering, artificial intelligence, and robotics.
+</p>
+<p>
+  I enjoy building web applications, Discord bots, machine learning projects, and intelligent robotic systems. I love turning ideas into real-world solutions and continuously learning new technologies.
+</p>
         </section>
 
         <section class="service">
@@ -196,15 +194,24 @@
               </div>
             </li>
           </ul>
-        </section>
+          <div class="separator"></div>
+
+          <a href="assets/images/AWS-Resume.pdf"
+   class="form-btn"
+   download>
+  <ion-icon name="download-outline"></ion-icon>
+  <span>Download Resume</span>
+</a>
+        </section>s
       </article>
+      
 
       <article class="resume" data-page="resume">
         <header>
           <h2 class="h2 article-title">Resume</h2>
         </header>
 
-<div></div>
+        <div></div>
 
         <section class="timeline">
           <div class="title-wrapper">
@@ -358,16 +365,20 @@
               <button class="active" data-filter-btn>All</button>
             </li>
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Web Design</button>
             </li>
             <li class="filter-item">
               <button data-filter-btn>Applications</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
             </li>
             <li class="filter-item">
               <button data-filter-btn>Bots</button>
             </li>
             <li class="filter-item">
               <button data-filter-btn>Robotics</button>
+            </li>
           </ul>
 
           <div class="filter-select-box">
@@ -383,92 +394,347 @@
                 <button data-select-item>All</button>
               </li>
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Web Design</button>
               </li>
               <li class="select-item">
                 <button data-select-item>Applications</button>
               </li>
+              <li class="select-item">
+                <button data-select-item>Bots</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Robotics</button>
+              </li>
             </ul>
           </div>
 
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="https://awsmlk.github.io/ICT-Project-Clothing-Website/" target="_blank" rel="noopener">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <div
-                    style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--light-gray);">
-                    <ion-icon name="shirt-outline" style="font-size: 60px;"></ion-icon>
-                  </div>
-                </figure>
-                <h3 class="project-title">Minimalist Clothing Website</h3>
-                <p class="project-category">Web design</p>
-              </a>
-            </li>
+            <ul class="project-list">
 
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://github.com/awsmlk/CPP-Project-1SEM" target="_blank" rel="noopener">
+              <!-- Clothing Website -->
+              <li class="project-item active" data-filter-item data-category="web design">
+                <a href="https://awsmlk.github.io/ICT-Project-Clothing-Website/" target="_blank" rel="noopener">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <div
+                      style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                      <ion-icon name="shirt-outline" style="font-size:60px;"></ion-icon>
+                    </div>
+                  </figure>
+
+                  <h3 class="project-title">Minimalist Clothing Website</h3>
+                  <p class="project-category">Web Design</p>
+                </a>
+              </li>
+
+              <!-- ATM Interface -->
+              <li class="project-item active" data-filter-item data-category="applications">
+                <a href="https://github.com/awsmlk/ATM-Banking-System" target="_blank" rel="noopener">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <div
+                      style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                      <ion-icon name="cash-outline" style="font-size:60px;"></ion-icon>
+                    </div>
+                  </figure>
+
+                  <h3 class="project-title">ATM Interface</h3>
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <!-- Server Response Prediction -->
+              <li class="project-item active" data-filter-item data-category="machine learning">
+                <a href="https://github.com/awsmlk/server-response-prediction-multiple-linear-regression"
+                  target="_blank" rel="noopener">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <div
+                      style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                      <ion-icon name="analytics-outline" style="font-size:60px;"></ion-icon>
+                    </div>
+                  </figure>
+
+                  <h3 class="project-title">Server Response Time Prediction</h3>
+                  <p class="project-category">Machine Learning</p>
+                </a>
+              </li>
+
+              <!-- Sentiment Analyzer -->
+              <li class="project-item active" data-filter-item data-category="machine learning">
+                <a href="https://github.com/awsmlk/sentiment-analyzer" target="_blank" rel="noopener">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <div
+                      style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                      <ion-icon name="chatbubble-ellipses-outline" style="font-size:60px;"></ion-icon>
+                    </div>
+                  </figure>
+
+                  <h3 class="project-title">Sentiment Analyzer</h3>
+                  <p class="project-category">Machine Learning</p>
+                </a>
+              </li>
+
+              <!-- Parking Management System -->
+              <li class="project-item active" data-filter-item data-category="applications">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="car-outline"></ion-icon>
                   </div>
                   <div
-                    style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--light-gray);">
-                    <ion-icon name="cash-outline" style="font-size: 60px;"></ion-icon>
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="car-sport-outline" style="font-size:60px;"></ion-icon>
                   </div>
                 </figure>
-                <h3 class="project-title">ATM Interface</h3>
+
+                <h3 class="project-title">Parking Management System</h3>
                 <p class="project-category">Applications</p>
-              </a>
-            </li>
-          </ul>
+              </li>
+
+              <!-- Discord Economy Bot -->
+              <li class="project-item active" data-filter-item data-category="bots">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="wallet-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Discord Economy Bot</h3>
+                <p class="project-category">Bots</p>
+              </li>
+
+              <!-- Discord Quran Bot -->
+              <li class="project-item active" data-filter-item data-category="bots">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="book-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Discord Quran Bot</h3>
+                <p class="project-category">Bots</p>
+              </li>
+
+              <!-- Discord Ticket Bot -->
+              <li class="project-item active" data-filter-item data-category="bots">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="ticket-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Discord Ticket Management Bot</h3>
+                <p class="project-category">Bots</p>
+              </li>
+
+              <!-- Discord Verification Bot -->
+              <li class="project-item active" data-filter-item data-category="bots">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="shield-checkmark-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Discord Verification Bot</h3>
+                <p class="project-category">Bots</p>
+              </li>
+              <!-- Discord Feature Testing & QA Bot -->
+              <li class="project-item active" data-filter-item data-category="bots">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="flask-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Discord Feature Testing & QA Bot</h3>
+                <p class="project-category">Bots</p>
+              </li>
+
+              <!-- Discord Music Streaming Bot -->
+              <li class="project-item active" data-filter-item data-category="bots">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="musical-notes-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Discord Music Streaming Bot</h3>
+                <p class="project-category">Bots</p>
+              </li>
+
+              <!-- Discord 24/7 Audio Bot -->
+              <li class="project-item active" data-filter-item data-category="bots">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="logo-discord"></ion-icon>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="radio-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Discord 24/7 Audio Bot</h3>
+                <p class="project-category">Bots</p>
+              </li>
+
+              <!-- Line Following Robot -->
+              <li class="project-item active" data-filter-item data-category="robotics">
+                <figure class="project-img">
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="git-compare-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Line Following Robot</h3>
+                <p class="project-category">Robotics</p>
+              </li>
+
+              <!-- Maze Solving Robot -->
+              <li class="project-item active" data-filter-item data-category="robotics">
+                <figure class="project-img">
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="map-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Maze Solving Robot</h3>
+                <p class="project-category">Robotics</p>
+              </li>
+
+              <!-- Obstacle Avoidance Robot -->
+              <li class="project-item active" data-filter-item data-category="robotics">
+                <figure class="project-img">
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="navigate-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Obstacle Avoidance Robot</h3>
+                <p class="project-category">Robotics</p>
+              </li>
+
+              <!-- Firefighting Robot -->
+              <li class="project-item active" data-filter-item data-category="robotics">
+                <figure class="project-img">
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="flame-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Firefighting Robot</h3>
+                <p class="project-category">Robotics</p>
+              </li>
+
+              <!-- Remote Control Robot -->
+              <li class="project-item active" data-filter-item data-category="robotics">
+                <figure class="project-img">
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="game-controller-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Remote Control Robot (CODI Bot)</h3>
+                <p class="project-category">Robotics</p>
+              </li>
+
+              <!-- Mini Drone -->
+              <li class="project-item active" data-filter-item data-category="robotics">
+                <figure class="project-img">
+                  <div
+                    style="display:flex;align-items:center;justify-content:center;width:100%;height:100%;color:var(--light-gray);">
+                    <ion-icon name="airplane-outline" style="font-size:60px;"></ion-icon>
+                  </div>
+                </figure>
+
+                <h3 class="project-title">Mini Drone</h3>
+                <p class="project-category">Robotics</p>
+              </li>
+
+            </ul>
         </section>
       </article>
-
 
       <article class="blog" data-page="blog">
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-        <p class="blog-placeholder">Coming soon…</p>
-        <section class="blog-list">
-          <!-- Blog posts will go here in the future -->
-        </section>
-      </article>
+              <header>
+                <h2 class="h2 article-title">Blog</h2>
+              </header>
+              <p class="blog-placeholder">Coming soon…</p>
+              <section class="blog-list">
+                <!-- Blog posts will go here in the future -->
+              </section>
+            </article>
 
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+            <article class="contact" data-page="contact">
+              <header>
+                <h2 class="h2 article-title">Contact</h2>
+              </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424857.19674535235!2d72.66056104999999!3d33.6153276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1647608789441!5m2!1sen!2s"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+              <section class="mapbox" data-mapbox>
+                <figure>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424857.19674535235!2d72.66056104999999!3d33.6153276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1647608789441!5m2!1sen!2s"
+                    width="400" height="300" loading="lazy"></iframe>
+                </figure>
+              </section>
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+              <section class="contact-form">
+                <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formspree.io/f/xpqapyqj" method="POST" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+                <form action="https://formspree.io/f/xpqapyqj" method="POST" class="form" data-form>
+                  <div class="input-wrapper">
+                    <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
+                    <input type="email" name="email" class="form-input" placeholder="Email address" required
+                      data-form-input>
+                  </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                  <textarea name="message" class="form-input" placeholder="Your Message" required
+                    data-form-input></textarea>
 
-            <button class="form-btn" type="submit" data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
+                  <button class="form-btn" type="submit" data-form-btn>
+                    <ion-icon name="paper-plane"></ion-icon>
+                    <span>Send Message</span>
+                  </button>
+                </form>
+              </section>
+            </article>
     </div>
   </main>
 
