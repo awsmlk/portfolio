@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, type ReactNode, useEffect, useMemo, useState } from "react";
-import Image from "next/image";
 
 type Project = {
   name: string;
@@ -290,7 +289,7 @@ export default function Home() {
 
         {noticeOpen && (
           <aside className="launch-note" aria-label="Current focus">
-            <Image src="/image0.jpg" alt="Awais Malik" width={56} height={56} unoptimized />
+            <img src="/image0.jpg" alt="Awais Malik" />
             <div>
               <p>Currently building useful things with code, AI, and robotics.</p>
               <div className="launch-actions">
@@ -459,7 +458,7 @@ export default function Home() {
         </div>
         <div className="contact-layout">
           <div className="contact-aside reveal">
-            <Image src="/image0.jpg" alt="Awais Malik" width={92} height={92} unoptimized />
+            <img src="/image0.jpg" alt="Awais Malik" />
             <p>Based in Islamabad, Pakistan. Open to learning, collaborating, and building useful things with good people.</p>
             <a className="text-link" href="mailto:awsmlk@proton.me">awsmlk@proton.me <span aria-hidden="true">↗</span></a>
             <div className="social-row">
